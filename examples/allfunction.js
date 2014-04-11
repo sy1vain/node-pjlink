@@ -1,6 +1,6 @@
 var pjlink = require('..');
 
-var beamer = new pjlink("192.168.1.45", 10000, "JBMIAProjectorLink");
+var beamer = new pjlink("localhost", 10000, "JBMIAProjectorLink");
 beamer.powerOn(function(err){
 	if(err){
 		console.log('error turning on', err);
