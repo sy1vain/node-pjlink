@@ -7,6 +7,14 @@ beamer.powerOn(function(err){
 		return;
 	}
 
+	/**
+		Get and set the input, choose from:
+		* 1 /	'rgb' /		pjlink.INPUT.RGB
+		* 2 /	'video' /	pjlink.INPUT.VIDEO
+		* 3 /	'digital' /	pjlink.INPUT.DIGITAL
+		* 4 /	'storage' /	pjlink.INPUT.STORAGE
+		* 5 / 	'network' /	pjlink.INPUT.NETWORK
+	**/
 	beamer.getInput(function(err, input){
 		console.log('input', err, input);
 	});
@@ -58,6 +66,14 @@ beamer.powerOn(function(err){
 		console.log('class', err, classNumber);
 	});
 
+
+	/**
+		Four possible power states:
+		* 0	/	pjlink.POWER.OFF
+		* 1 /	pjlink.POWER.ON
+		* 2 /	pjlink.POWER.COOLING_DOWN
+		* 3 /	pjlink.POWER.WARMING_UP
+	**/
 	beamer.getPowerState(function(err, state){
 		if(err){
 			console.log(err);
