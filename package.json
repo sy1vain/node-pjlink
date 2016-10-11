@@ -1,6 +1,9 @@
 {
 	"name": "pjlink",
 	"version": "0.2.1",
+	"dependencies": {
+		"extend": "~3.0.0"
+	},
 	"description": "Control for PJLink enables projectors",
 	"author": "Sylvain Vriens <hello@sylvain.nl> (http://sylvain.nl/)",
 	"main": "./index",
